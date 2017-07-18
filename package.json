@@ -4,7 +4,8 @@
   "description": "A web app that allows users to upload, share and comment on images",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node app.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/Polymathwole/pic-share-app/issues"
   },
-  "homepage": "https://github.com/Polymathwole/pic-share-app#readme"
+  "homepage": "https://github.com/Polymathwole/pic-share-app#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.15.3",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.3"
+  }
 }
