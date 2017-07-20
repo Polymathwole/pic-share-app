@@ -3,8 +3,16 @@
         <h3 class="text-center">Welcome to PicShare!</h3>
     </div>
     <div id="form-container" class="col-md-7 col-md-offset-3">
-    <h2 class="text-center"><i class='fa fa-sign-in'></i>Sign in</h2>
-    <form class="form-horizontal" action='/signup'>
+    <h2 id='signin' class="text-center"><i class='fa fa-sign-in'></i>Sign in</h2>
+
+<div class='row'>
+    <div class="col-md-7 col-md-offset-2 alert alert-admissible alert-info">
+        <a href="#" class="close" data-dismiss="alert">&times;</a>
+        <strong>{{{msg}}}</strong>
+    </div>
+</div>
+
+    <form class="form-horizontal" action='/dash' method="POST">
         <div class='form-group'>
             <label class='col-md-2' for="em">E-mail</label>
             <div class='col-md-10'>

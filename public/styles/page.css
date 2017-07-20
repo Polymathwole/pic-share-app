@@ -7,3 +7,8 @@ h3
 {
     font-size: 35px;
 }
+
+#signin,#signup
+{
+    margin-bottom: 70px;
+}

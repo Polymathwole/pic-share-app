@@ -1,0 +1,46 @@
+<div class="container">
+    <div id="form-container" class="col-md-7 col-md-offset-3">
+    <h2 id='signup' class="text-center"><i class='fa fa-sign-in'></i>Sign up</h2>
+{{#if errors}}
+{{#each errors}}
+<div class='row'>
+    <div class="col-md-7 col-md-offset-2 alert alert-admissible alert-danger">
+        <a href="#" class="close" data-dismiss="alert">&times;</a>
+        <strong>{{{msg}}}</strong>
+    </div>
+</div>
+{{/each}}
+{{/if}}
+    <form class="form-horizontal" action='/signup' method="POST">
+        <div class='form-group'>
+            <label class='col-md-2' for="un">Username</label>
+            <div class='col-md-10'>
+                <input type="text" class='form-control' id="un" placeholder="Enter username" name='username'/>
+            </div>
+        </div>
+        <div class='form-group'>
+            <label class='col-md-2' for="em">E-mail</label>
+            <div class='col-md-10'>
+                <input type="email" class='form-control' id="em" placeholder="Enter e-mail" name='mail'/>
+            </div>
+        </div>
+        <div class='form-group'>
+            <label class='col-md-2' for="pw">Password</label>
+            <div class='col-md-10'>
+                <input type="password" class='form-control' id="pw" placeholder="Enter password" name='pass'/>
+            </div>
+        </div>
+        <div class='form-group'>
+            <label class='col-md-2' for="cpw">Confirm Password</label>
+            <div class='col-md-10'>
+                <input type="password" class='form-control' id="cpw" placeholder="Confirm password" name='cpass'/>
+            </div>
+        </div>
+        <div class='form-group'>
+            <div class='col-md-5 col-md-offset-2'>
+                <input type='submit' class='btn btn-info' value="Sign up"/>
+            </div>
+        </div>
+    </form>
+    </div>
+</div>
