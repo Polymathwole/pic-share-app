@@ -4,25 +4,33 @@
     </div>
     <div id="form-container" class="col-md-7 col-md-offset-3">
     <h2 id='signin' class="text-center"><i class='fa fa-sign-in'></i>Sign in</h2>
-
+{{#if success}}
 <div class='row'>
     <div class="col-md-7 col-md-offset-2 alert alert-admissible alert-info">
         <a href="#" class="close" data-dismiss="alert">&times;</a>
-        <strong>{{{msg}}}</strong>
+        <strong>{{{success}}}</strong>
     </div>
 </div>
-
+{{/if}}
+{{#if fail}}
+<div class='row'>
+    <div class="col-md-7 col-md-offset-2 alert alert-admissible alert-danger">
+        <a href="#" class="close" data-dismiss="alert">&times;</a>
+        <strong>{{{fail}}}</strong>
+    </div>
+</div>
+{{/if}}
     <form class="form-horizontal" action='/dash' method="POST">
         <div class='form-group'>
             <label class='col-md-2' for="em">E-mail</label>
             <div class='col-md-10'>
-                <input type="email" class='form-control' id="em" placeholder="Enter e-mail"/>
+                <input type="email" class='form-control' id="em" placeholder="Enter e-mail" name='email'/>
             </div>
         </div>
         <div class='form-group'>
             <label class='col-md-2' for="pw">Password</label>
             <div class='col-md-10'>
-                <input type="password" class='form-control' id="pw" placeholder="Enter password"/>
+                <input type="password" class='form-control' id="pw" placeholder="Enter password" name='pass'/>
             </div>
         </div>
         <div class='form-group'>
