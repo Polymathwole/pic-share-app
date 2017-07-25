@@ -15,6 +15,7 @@ app.use(express.static(__dirname+'/public'));
 app.set('port',process.env.PORT||8080);
 
 app.use(cookiep(credentials.cookiesecret));
+
 app.use(session({secret:credentials.sessionsecret,saveUninitialized:false,resave:false}));
 
 app.use(bodyp.urlencoded({extended:false}));

@@ -1,6 +1,6 @@
 body
 {
-    margin-top:80px;
+    margin-top:30px;
 }
 
 h3
@@ -11,4 +11,9 @@ h3
 #signin,#signup
 {
     margin-bottom: 70px;
+}
+
+h2
+{
+    right: 30px;
 }
