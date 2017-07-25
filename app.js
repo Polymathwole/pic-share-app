@@ -39,6 +39,6 @@ app.use(expressValidator({
 
 routes(app);
 
-app.listen(app.get('port'),()=>{
+app.listen(process.env.PORT||8080,()=>{
     console.log(`App in ${app.get('env')} on http://localhost:${app.get('port')}. Press Ctrl-C to terminate.`)
 });
