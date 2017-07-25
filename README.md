@@ -2,7 +2,7 @@
 A web app that allows users to upload, share and comment on images
 
 ## Technologies used
-* Node (Javascript framework)
+* Node (Javascript platform)
 * Express (for routing)
 * Firebase (database)
 
@@ -11,6 +11,7 @@ A web app that allows users to upload, share and comment on images
 * Signed in user can sign out
 
 ## User stories to be implemented soon
+* Signed in user can upload an image
 * View uploaded images as visitor and signed in user
 * Signed in user can delete images they upload themselves
 * Signed in user can comment on images
